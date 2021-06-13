@@ -1,0 +1,130 @@
+header {
+  padding-top: 15px;
+  top: 0;
+  background-color: rgb(248, 221, 180);
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 3;
+  .container {
+    display: flex;
+    .header-logo {
+      img {
+        object-fit: cover;
+        width: 90px;
+      }
+    }
+    .header-nav {
+      margin-left: auto;
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+          margin-right: 18px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+// -----------------------------js
+.nav-btn {
+  width: 52px;
+  height: 30px;
+  appearance: none;
+  background: transparent;
+  border: none;
+  font: inherit;
+  outline: none;
+  position: relative;
+  right: 30px;
+  display: none;
+  z-index: 10;
+
+  &.-active {
+    span {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transition: transform 0.3s ease;
+      &:first-child {
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: transform 0.3s ease;
+    &:first-child {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    &:last-child {
+      bottom: 0;
+    }
+  }
+}
+
+// ------------------------------responsive
+@media (max-width: 767px) {
+  header {
+    .container {
+      display: block;
+      .header-nav {
+        margin: 0 auto;
+        background-color: rgba(80, 78, 78, 0.5);
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
+        &.-active {
+          opacity: 1;
+          visibility: visible;
+          transition: opacity 0.3s ease;
+        }
+
+        ul {
+          flex-direction: column;
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 30px;
+          margin-top: 10px;
+          li {
+            font-size: 25px;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .nav-btn {
+        display: block;
+        margin-left: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+
+      .header-logo {
+        display: flex;
+      }
+    }
+  }
+}
