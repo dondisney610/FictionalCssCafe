@@ -61,8 +61,14 @@
     flex-direction: column;
     main {
       width: 100%;
+      margin-right: 0px;
       .news {
         margin: 0 20px;
+        dl {
+          dd {
+            width: 100%;
+          }
+        }
       }
       .campaign {
         margin: 0 20px;
