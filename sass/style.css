@@ -314,7 +314,7 @@ header .container .header-nav ul li {
 }
 
 .access .address .address-text dl dt {
-  width: 25%;
+  width: 30%;
   font-size: 18px;
   margin-top: 20px;
 }
@@ -407,7 +407,7 @@ header .container .header-nav ul li {
 
 @media (max-width: 767px) {
   .contact .contact-square {
-    height: 300px;
+    height: 370px;
     width: 100%;
   }
   .contact .contact-square img {
