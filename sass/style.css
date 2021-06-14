@@ -264,6 +264,9 @@ header .container .header-nav ul li {
   .contents main .news {
     margin: 0 20px;
   }
+  .contents main .news dl dd {
+    width: 100%;
+  }
   .contents main .campaign {
     margin: 0 20px;
   }
