@@ -56,9 +56,13 @@
           width: 80%;
           margin: 0 auto;
           font-size: 20px;
-        }
-        dd {
-          padding-left: 30px;
+          dt {
+            font-size: 17px;
+          }
+          dd {
+            padding-left: 30px;
+            font-size: 17px;
+          }
         }
       }
       img {
