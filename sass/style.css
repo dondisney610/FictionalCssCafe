@@ -330,26 +330,27 @@ header .container .header-nav ul li {
 }
 
 @media (max-width: 767px) {
-  .address {
+  .access .address {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .address .address-text {
+  .access .address .address-text {
     text-align: center;
     margin-bottom: 40px;
+    margin-left: 0px;
   }
-  .address .address-text dl {
+  .access .address .address-text dl {
     text-align: left;
     width: 80%;
     margin: 0 auto;
     font-size: 20px;
   }
-  .address .address-text dd {
+  .access .address .address-text dd {
     padding-left: 30px;
   }
-  .address img {
+  .access .address img {
     margin: 0 auto;
   }
 }
@@ -407,6 +408,7 @@ header .container .header-nav ul li {
 @media (max-width: 767px) {
   .contact .contact-square {
     height: 300px;
+    width: 100%;
   }
   .contact .contact-square img {
     margin-right: 20px;
